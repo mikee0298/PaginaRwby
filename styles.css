@@ -538,3 +538,30 @@ button {
     border: none;
     cursor: pointer;
 }
+
+.personaje-1 {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  /*background-color: #17141d;*/
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.personaje-1:not(:first-child) {
+    margin-left: 0px;
+}
+
+.personaje-1:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.personaje-1:hover ~ .personaje-1 {
+  position: relative;
+  left: 0px;
+  transition: 0.4s ease-out;
+}
