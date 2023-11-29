@@ -424,3 +424,12 @@ input {
     grid-template-columns: 30% 70%;
     grid-gap: 1em;
   }
+
+  .InfoJaune {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1em;
+  }
+
+
+  
