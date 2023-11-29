@@ -27,7 +27,8 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1B1726;
+    /*background-color: #1B1726;*/
+    background: linear-gradient(#141e30, #243b55);
     color: #ffffff;
 }
 
