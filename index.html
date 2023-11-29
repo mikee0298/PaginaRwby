@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div transition-style="in:polygon:opposing-corners">
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo">Logo</a>
@@ -17,8 +18,8 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Personajes</a></li>
-                    <li><a href="#">Foro</a></li>
+                    <li><a href="#allpersonajes">Personajes</a></li>
+                    <li><a href="foro.html">Foro</a></li>
                     <li><a href="login.html">Log in</a></li>
                 </ul>
             </nav>
@@ -33,8 +34,8 @@
                     su mundo de monstruos llamados Grimm.
                 </p>
                 <div class="butons">
-                    <a href="#" class="btn-1">Informacion</a>
-                    <a href="#" class="btn-1">Personajes</a>
+                    <a href="notfound.html" class="btn-1">Informacion</a>
+                    <!--<a href="#" class="btn-1">Personajes</a>-->
                 </div>
             </div>
         </div>
@@ -80,6 +81,7 @@
     </section>
 
     <main class="Personajes container">
+        <section id="allpersonajes">
         <h2 class="h2">Todos los personajes</h2 class="h2">
         <div class="personaje-content">
             <div class="personaje-1">
@@ -163,6 +165,7 @@
             </div>
 
         </div>
+        </section>
     </main>
 
     <section class="contact container">
@@ -251,5 +254,6 @@ $('#next').click(function() {
 moveToSelected('next');
 });
     </script>
+    </div>
 </body>
 </html>
