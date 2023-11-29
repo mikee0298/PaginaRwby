@@ -10,6 +10,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1B1726;
+    color: #ffffff;
 }
 
 img {
@@ -22,7 +23,7 @@ img {
 }
 
 .header {
-    background-image: url(Imagenes/images/bg.jpg);
+    background-image: url(Imagenes/findobien.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,7 +127,7 @@ img {
 }
 
 .popular {
-    padding: 100px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -239,7 +240,7 @@ input {
     color: #ff5a2c;
 }
 
-@media(max-width:991px) {
+@media(max-width:400px) {
 
     .menu {
         pad: 20px;
@@ -331,8 +332,8 @@ input {
     position: relative;
     height: 400px;
     top: 50%;
-    transform: translateY(-50%);
     overflow: hidden;
+    display: flex;
   }
   #carousel div {
     position: absolute;
@@ -340,7 +341,8 @@ input {
     opacity: 1;
   }
   #carousel div img {
-    width: 400px;
+    max-width: 100%;
+    width: 300px;
     transition: width 1s;
   }
   #carousel div.hideLeft {
@@ -349,7 +351,7 @@ input {
     transform: translateY(50%) translateX(-50%);
   }
   #carousel div.hideLeft img {
-    width: 200px;
+    width: 100px;
   }
   #carousel div.hideRight {
     left: 100%;
@@ -357,7 +359,7 @@ input {
     transform: translateY(50%) translateX(-50%);
   }
   #carousel div.hideRight img {
-    width: 200px;
+    width: 100px;
   }
   #carousel div.prev {
     z-index: 5;
@@ -365,16 +367,16 @@ input {
     transform: translateY(50px) translateX(-50%);
   }
   #carousel div.prev img {
-    width: 300px;
+    width: 200px;
   }
   #carousel div.prevLeftSecond {
     z-index: 4;
     left: 15%;
-    transform: translateY(50%) translateX(-50%);
+    transform: translateY(75%) translateX(-15%);
     opacity: 0.7;
   }
   #carousel div.prevLeftSecond img {
-    width: 200px;
+    width: 100px;
   }
   #carousel div.selected {
     z-index: 10;
@@ -387,21 +389,38 @@ input {
     transform: translateY(50px) translateX(-50%);
   }
   #carousel div.next img {
-    width: 300px;
+    width: 200px;
   }
   #carousel div.nextRightSecond {
     z-index: 4;
     left: 85%;
-    transform: translateY(50%) translateX(-50%);
+    transform: translateY(75%) translateX(-85%);
     opacity: 0.7;
   }
   #carousel div.nextRightSecond img {
-    width: 200px;
+    width: 100px;
   }
-  
-  .buttons {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px;
+
+  .InfoRuby {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1em;
+  }
+
+  .InfoWeiss {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1em;
+  }
+
+  .InfoYang {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1em;
+  }
+
+  .InfoBlake {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 1em;
   }
